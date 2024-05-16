@@ -48,8 +48,8 @@ python src/preprocessing.py --data_path=path_to_dataset [--additional_parameters
 ##### Additional Parameters
 
 - `--texture`: Whether to generate the textured version or not.
-- `--overlay`: Whether to save overlayed images for visualization.
-- `--mask`: Whether to save masked images.
+- `--overlay`: When this option is enabled, the script will generate images where the original image is overlaid with the 3D mesh, highlighting it in blue.
+- `--mask`: When this option is enabled, the script generates masked images where the background is completely black, and only the portion where the object is present remains visible.
 
 
 ### Citation
