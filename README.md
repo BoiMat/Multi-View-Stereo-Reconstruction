@@ -51,6 +51,32 @@ python src/preprocessing.py --data_path=path_to_dataset [--additional_parameters
 - `--overlay`: When this option is enabled, the script will generate images where the original image is overlaid with the 3D mesh, highlighting it in blue.
 - `--mask`: When this option is enabled, the script generates masked images where the background is completely black, and only the portion where the object is present remains visible.
 
+### COLMAP Reconstruction
+
+Before using the deep models, it's necessary to reconstruct the scene using COLMAP. COLMAP is a popular Structure-from-Motion (SfM) and Multi-View Stereo (MVS) software. You can download and install it from the [official website](https://colmap.github.io/).
+
+#### Setup for COLMAP Reconstruction
+
+1. **Prepare for Reconstruction**: Run the `custom2colmap.py` script located in the `src` folder. This script sets up a folder structure for COLMAP reconstruction. It takes the data path and the output path as parser parameters.
+
+   ```bash
+   python src/custom2colmap.py --data_path=path_to_dataset --output_path=output_folder
+   ```
+
+#### COLMAP Reconstruction Process
+
+COLMAP reconstruction consists of two main steps: a fast, sparse reconstruction, and a subsequent slow, deep reconstruction.
+
+1. **Fast, Sparse Reconstruction**: This step generates a quick, sparse reconstruction of the scene, which is sufficient for using the deep models.
+
+2. **Slow, Deep Reconstruction**: After the fast reconstruction, a more detailed, deep reconstruction can be performed. This step provides a more accurate 3D model of the scene.
+
+#### Running COLMAP Reconstruction
+
+- **Windows**: For Windows users, a `.bat` script called `run_colmap.bat` is provided to facilitate running COLMAP using the pre-built binaries. Simply place the script in COLMAP folder and execute it.
+
+- **Linux/Mac**: follow the official COLMAP documentation to install and run COLMAP on Linux or Mac systems.
+
 
 ### Citation
 
