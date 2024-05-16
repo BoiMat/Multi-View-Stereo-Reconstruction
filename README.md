@@ -37,10 +37,9 @@ You can run the preprocessing script with the following command:
 python src/preprocessing.py --data_path=path_to_dataset [--additional_parameters]
 ```
 
-#### Additional Parameters
-
 - `--data_path`: Path to the directory containing the dataset (default: "data").
 
+#### Additional Parameters
 ##### Ground Truth Point Cloud Parameters
 
 - `--num_samples`: Number of samples for the ground truth point cloud (default: 100000).
