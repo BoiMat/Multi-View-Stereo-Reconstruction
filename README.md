@@ -9,10 +9,11 @@ The dataset is structured as follows:
 - **1movement_cb/**: Images captured with the cobot in a single movement with calibration board.
   - **artificial/**: Images captured with artificial light.
   - **natural/**: Images captured with natural light.
-
-Each subfolder contains images of objects captured from different viewpoints, along with pose information in `pose.yml`.
-
+    
 - **2movements_cb/**: Similar structure to `1movement_cb/`, but with two movements.
+- **1movement_nocb/**: Similar structure to `1movement_cb/`, but without the checkerboard underneath the objects.
+
+Each subfolder (namely **scan01/**, **scan02/**, etc.) contains images of the six objects captured from different viewpoints, along with pose information in `pose.yml`.
 
 - **objects/**: 3D meshes of the objects used in the dataset.
 
