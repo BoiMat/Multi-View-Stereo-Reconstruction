@@ -73,7 +73,7 @@ COLMAP reconstruction consists of two main steps: a fast, sparse reconstruction,
 
 #### Running COLMAP Reconstruction
 
-- **Windows**: For Windows users, a `.bat` script called `run_colmap.bat` is provided to facilitate running COLMAP using the pre-built binaries. Simply place the script in COLMAP folder and execute it.
+- **Windows**: For Windows users, COLMAP pre-built binaries and a `.bat` script called `run_colmap.bat` are provided in **COLMAP-3.8/**. Simply execute the script following the example instructions.
 
 - **Linux/Mac**: follow the official COLMAP documentation to install and run COLMAP on Linux or Mac systems.
 
