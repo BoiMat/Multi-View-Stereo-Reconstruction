@@ -1,6 +1,6 @@
 # Multi-View Stereo Reconstruction Thesis Work
 
-This repository contains the dataset and code for my thesis work on Multi-view Stereo (MVS) Depth Estimation and 3D Reconstruction. The project involves the use of three different MVS techniques: COLMAP, GBi-Net, and MVSformer, applied to a custom dataset captured with a cobot (collaborative robot).
+This repository contains the dataset and code for my thesis work on Multi-view Stereo (MVS) Depth Estimation and 3D Reconstruction. The project involves the use of three different MVS techniques: COLMAP, GBi-Net, and MVSformer, applied to a custom dataset captured with a URX10e collaborative robot.
 
 ## Dataset Structure
 
