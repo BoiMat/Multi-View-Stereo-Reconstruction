@@ -21,8 +21,6 @@ Each subfolder (namely **scan01/**, **scan02/**, etc.) contains images of the si
 
 - **calibrated_camera.yml**: Contains camera calibration specifics including intrinsic parameters and distortion coefficients.
 
-Here's the modified "Usage" section including information about the preprocessing script and its parameters:
-
 ## Usage
 
 ### Dataset Preprocessing
@@ -69,7 +67,7 @@ COLMAP reconstruction consists of two main steps: a fast, sparse reconstruction,
 
 1. **Fast, Sparse Reconstruction**: This step generates a quick, sparse reconstruction of the scene, which is sufficient for using the deep models.
 
-2. **Slow, Deep Reconstruction**: After the fast reconstruction, a more detailed, deep reconstruction can be performed. This step provides a more accurate 3D model of the scene.
+2. **Slow, Dense Reconstruction**: After the fast reconstruction, a more detailed, deep reconstruction can be performed. This step provides a more accurate 3D model of the scene.
 
 #### Running COLMAP Reconstruction
 
