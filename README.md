@@ -4,6 +4,14 @@ This repository contains the dataset and code for my thesis work on Multi-view S
 
 ## Requirements
 
+This project involves running tests with three state-of-the-art models for multi-view stereo depth estimation and 3D reconstruction. We used a traditional method (COLMAP), a CNN-based method (gbinet), and a vision transformer-based method (MVSformer) to ensure a variety of approaches.
+
+- To avoid conflicts, it is recommended to use **Python 3.8** for this project
+- **PyTorch3D** can be installed by following the instructions provided in the [official PyTorch3D installation guide](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md).
+- **COLMAP** is a popular Structure-from-Motion (SfM) and Multi-View Stereo (MVS) software. You can download and install it from the [official website](https://colmap.github.io/).
+- **GBi-Net** is a CNN-based multi-view stereo method. The code and installation instructions are on the [author's GitHub page](https://github.com/MiZhenxing/GBi-Net).
+- **MVSformer** is a vision transformer-based multi-view stereo method. The code and installation instructions are on the [author's GitHub page](https://github.com/MVSformer/MVSFormer).
+
 ## Usage
 
 ### Dataset Preprocessing
@@ -34,7 +42,7 @@ python src/preprocessing.py --data_path=path_to_dataset [--additional_parameters
 
 ### COLMAP Reconstruction
 
-Before using the deep models, it's necessary to reconstruct the scene using COLMAP. COLMAP is a popular Structure-from-Motion (SfM) and Multi-View Stereo (MVS) software. You can download and install it from the [official website](https://colmap.github.io/).
+Before using the deep models, it's necessary to reconstruct the scene using COLMAP.
 
 #### Setup for COLMAP Reconstruction
 
