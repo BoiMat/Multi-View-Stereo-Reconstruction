@@ -42,7 +42,7 @@ python src/preprocessing.py --data_path=path_to_dataset [--additional_parameters
 
 ### COLMAP Reconstruction
 
-Before using the deep models, it's necessary to reconstruct the scene using COLMAP.
+Before using the deep models, it's necessary to run COLMAP sparse reconstruction.
 
 #### Setup for COLMAP Reconstruction
 
