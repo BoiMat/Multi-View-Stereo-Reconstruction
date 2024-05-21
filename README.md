@@ -65,3 +65,8 @@ COLMAP reconstruction consists of two main steps: a fast, sparse reconstruction,
 - **Windows**: For Windows users, a `.bat` script called `run_colmap.bat` is provided to facilitate running COLMAP using the pre-built binaries. Place the `run_colmap.bat` file in the same folder as the COLMAP binaries. Then, simply execute the script and follow the example instructions.
 
 - **Linux/Mac**: follow the official COLMAP documentation to install and run COLMAP on Linux or Mac systems.
+
+
+### GBi-Net and MVSFormer Reconstruction
+
+In the `src` folder, you will find two subfolders: `gbinet` and `mvsformer`. These folders contain additional files and scripts that should be added after completing the installation as instructed on the original GitHub pages of GBi-Net and MVSFormer. These additional files include custom configurations and any modifications necessary to run the models with our custom dataset. Follow the installation instructions on the respective GitHub pages first, and then incorporate the contents of these subfolders to complete the setup.
