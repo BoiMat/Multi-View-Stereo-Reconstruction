@@ -69,4 +69,6 @@ COLMAP reconstruction consists of two main steps: a fast, sparse reconstruction,
 
 ### GBi-Net and MVSFormer Reconstruction
 
-In the `src` folder, you will find two subfolders: `gbinet` and `mvsformer`. These folders contain additional files and scripts that should be added after completing the installation as instructed on the original GitHub pages of GBi-Net and MVSFormer. These additional files include custom configurations and any modifications necessary to run the models with our custom dataset. Follow the installation instructions on the respective GitHub pages first, and then incorporate the contents of these subfolders to complete the setup.
+After completing the COLMAP sparse reconstruction, you can run the `src/run_colmap2mvsnet.sh` script to convert the data into a format suitable for the deep learning models.
+
+Within the `src` folder, there are subfolders named `gbinet` and `mvsformer`. These folders contain additional files and scripts necessary for running the respective models. After following the installation instructions on the original GitHub pages for gbinet and MVSformer, you should add the contents of these subfolders to the corresponding directories. These additional files include custom configurations, preprocessing scripts, and any modifications needed to run the models with the custom dataset.
